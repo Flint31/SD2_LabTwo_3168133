@@ -30,8 +30,8 @@ public class Conversions {
     }
 
     // Converts a String to an int
-    public int  stringToInteger(String val) {
-        return 0;
+    public int stringToInteger(String val) {
+        return Integer.parseInt(val);
     }
 
     // Converts an int to a String
