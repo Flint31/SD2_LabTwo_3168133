@@ -41,6 +41,11 @@ public class ConversionsTest {
                 () -> conversions.stringToInteger("abc"));
     }
 
-
+    @Test
+    void testIntegerToString() {
+        assertEquals("0", conversions.integerToString(0));
+        assertEquals("45", conversions.integerToString(45));
+        assertEquals("-12", conversions.integerToString(-12));
+    }
 }
 
