@@ -35,8 +35,8 @@ public class Conversions {
     }
 
     // Converts an int to a String
-    public String integerToString(int val)  {
-        return null;
+    public String integerToString(int val) {
+        return String.valueOf(val);
     }
 
     // Change  uppercase to lowercase and vice versa
