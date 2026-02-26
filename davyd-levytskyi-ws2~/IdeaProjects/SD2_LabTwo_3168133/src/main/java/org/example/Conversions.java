@@ -5,12 +5,19 @@
 package org.example;
 
 
+
+
+
 public class Conversions {
 
-     // Converts euro to dollar
+    private static final double EURO_TO_DOLLAR_RATE = 1.1;
+
+    // Converts euro to dollar
     public double euroToDollar(double euro) {
-        return 0;
+        return euro * EURO_TO_DOLLAR_RATE;
     }
+
+
 
 
 
