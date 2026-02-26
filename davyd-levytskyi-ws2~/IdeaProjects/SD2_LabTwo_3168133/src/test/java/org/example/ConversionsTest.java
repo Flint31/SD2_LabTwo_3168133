@@ -28,7 +28,18 @@ public class ConversionsTest {
         assertEquals(-9.09, conversions.dollarToEuro(-10.0), 0.01);
     }
 
+    @Test
+    void testStringToInteger() {
+        // positive
+        assertEquals(123, conversions.stringToInteger("123"));
 
+        // negative
+        assertEquals(-5, conversions.stringToInteger("-5"));
+
+        // invalid string -> should throw
+        assertThrows(NumberFormatException.class,
+                () -> conversions.stringToInteger("abc"));
+    }
 
 
 }
