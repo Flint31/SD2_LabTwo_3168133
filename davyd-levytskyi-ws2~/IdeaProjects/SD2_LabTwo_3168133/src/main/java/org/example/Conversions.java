@@ -21,9 +21,12 @@ public class Conversions {
 
 
 
+
     // Converts dollar to euro
-    public double dollarToEuro(double  dollar) {
-        return 0;
+    private static final double DOLLAR_TO_EURO_RATE = 1 / 1.1;
+
+    public double dollarToEuro(double dollar) {
+        return dollar * DOLLAR_TO_EURO_RATE;
     }
 
     // Converts a String to an int
