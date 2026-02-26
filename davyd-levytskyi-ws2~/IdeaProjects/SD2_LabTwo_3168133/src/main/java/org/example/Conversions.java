@@ -40,7 +40,21 @@ public class Conversions {
     }
 
     // Change  uppercase to lowercase and vice versa
+
     public String switchCase() {
-        return null;
+        String input = "AbC123!";
+        StringBuilder result = new StringBuilder();
+
+        for (int i = 0; i  < input.length(); i++) {
+            char c = input.charAt(i);
+            if  (Character.isUpperCase(c)) {
+                result.append(Character.toLowerCase(c));
+            } else if (Character.isLowerCase(c)) {
+                result.append(Character.toUpperCase(c));
+            } else {
+                 result.append(c);
+            }
+        }
+         return result.toString();
     }
 }
