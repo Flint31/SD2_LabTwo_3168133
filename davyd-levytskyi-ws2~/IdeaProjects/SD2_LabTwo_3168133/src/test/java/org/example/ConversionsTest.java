@@ -47,5 +47,12 @@ public class ConversionsTest {
         assertEquals("45", conversions.integerToString(45));
         assertEquals("-12", conversions.integerToString(-12));
     }
+
+    @Test
+    void testSwitchCase() {
+        assertEquals("aBc123!", conversions.switchCase());
+        assertEquals(7, conversions.switchCase().length());
+        assertTrue(conversions.switchCase().endsWith("!"));
+    }
 }
 
